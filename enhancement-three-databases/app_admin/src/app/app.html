@@ -1,0 +1,11 @@
+<nav class="navbar navbar-dark bg-dark px-3 mb-2">
+  <span class="navbar-brand mb-0 h1">Travlr Getaways Admin</span>
+  <div class="d-flex align-items-center gap-2" *ngIf="authService.isLoggedIn()">
+    <a class="btn btn-link text-light btn-sm" routerLink="/trips" routerLinkActive="fw-bold">Trips</a>
+    <a class="btn btn-link text-light btn-sm" routerLink="/reports" routerLinkActive="fw-bold"
+       *ngIf="authService.isAdmin()">Revenue Report</a>
+    <button class="btn btn-outline-light btn-sm" (click)="logout()">Log Out</button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

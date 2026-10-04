@@ -1,0 +1,32 @@
+[
+  {
+    "code": "GALR210214",
+    "name": "Gale Reef",
+    "length": "5 nights",
+    "start": "2026-02-14",
+    "resort": "Gale Reef Resort",
+    "perPerson": "1899.00",
+    "image": "reef1.jpg",
+    "description": "Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat."
+  },
+  {
+    "code": "TRSY210415",
+    "name": "Tropical Sunset",
+    "length": "7 nights",
+    "start": "2026-04-15",
+    "resort": "Sunset Bay Resort",
+    "perPerson": "2199.00",
+    "image": "reef2.jpg",
+    "description": "Nunc velit metus, gravida ut turpis vel, tincidunt aliquet nunc."
+  },
+  {
+    "code": "BLGN210601",
+    "name": "Blue Lagoon",
+    "length": "4 nights",
+    "start": "2026-06-01",
+    "resort": "Blue Lagoon Resort",
+    "perPerson": "1599.00",
+    "image": "reef3.jpg",
+    "description": "Vivamus fringilla nunc quis metus interdum, in blandit lectus mattis."
+  }
+]

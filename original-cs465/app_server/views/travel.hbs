@@ -1,0 +1,14 @@
+<ul id="sites">
+    {{#each trips}}
+    <li>
+        <a href="/travel"><img src="images/{{this.image}}" alt="{{this.name}}"></a>
+        <h2><a href="/travel">{{this.name}}</a></h2>
+        <p>
+            {{this.description}}
+        </p>
+        <p>
+            {{this.length}} at {{this.resort}} starting {{this.start}} — ${{this.perPerson}} per person.
+        </p>
+    </li>
+    {{/each}}
+</ul>
