@@ -1,0 +1,21 @@
+<div class="card mb-3 shadow-sm">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ trip.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ trip.code }}</h6>
+        <p class="card-text">{{ trip.description }}</p>
+        <ul class="list-unstyled small text-muted">
+          <li><strong>Length:</strong> {{ trip.length }}</li>
+          <li><strong>Start:</strong> {{ trip.start | date:'mediumDate' }}</li>
+          <li><strong>Resort:</strong> {{ trip.resort }}</li>
+          <li><strong>Per Person:</strong> ${{ trip.perPerson }}</li>
+        </ul>
+        <ng-container *ngIf="canEdit">
+          <button class="btn btn-primary btn-sm me-2" (click)="onEdit()">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="onDelete()">Delete</button>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
